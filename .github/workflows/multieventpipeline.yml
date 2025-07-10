@@ -5,7 +5,7 @@ on:
         branches:
             - master
             - test
-    pull_request:# Event: whenever pull pull_request made to the repository
+    pull_request: # Event: whenever pull pull_request made to the repository
         branches:
             - master
 
