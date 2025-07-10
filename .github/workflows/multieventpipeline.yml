@@ -8,6 +8,8 @@ on:
     pull_request: # Event: whenever pull pull_request made to the repository
         branches:
             - master
+    workflow_dispatch:
+    
 
 
 jobs:
