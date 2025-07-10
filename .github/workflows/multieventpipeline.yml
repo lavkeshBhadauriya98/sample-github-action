@@ -8,6 +8,8 @@ on:
     pull_request: # Event: whenever pull pull_request made to the repository
         branches:
             - master
+        types:
+            - closed
     workflow_dispatch:
     
 
@@ -25,3 +27,10 @@ jobs:
         steps:
          - name: "Running on pull request"
            run: echo "Running on pull request"
+
+    on-workflow_dispatch:
+        if: github.event_name == 'workflow_dispatch'
+        runs-on: ubuntu-latest
+        steps:
+            -name: "Running on workflow dispatch"
+             run: echo "Running pn workflow dispatch"
